@@ -1,14 +1,13 @@
-const doSomething = () => {
-    return "Hello";
-};
+const someArray = [0, 1, 2, 3, 4];
 
-function repeat(operation, num) {
-    for(let i = 0; i < num; i++){
-        operation();
-    }
+function doubleAll(numbers) {
+     return numbers.map(item => (
+        item * 2
+    ));
 }
 
-repeat(doSomething, 3);
+doubleAll(someArray);
 
-module.exports = repeat;
+module.exports = doubleAll;
+
 
