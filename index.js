@@ -1,5 +1,14 @@
-function upperCaser(input) {
-    return input.toUpperCase();
+const doSomething = () => {
+    return "Hello";
+};
+
+function repeat(operation, num) {
+    for(let i = 0; i < num; i++){
+        operation();
+    }
 }
 
-module.exports = upperCaser;
+repeat(doSomething, 3);
+
+module.exports = repeat;
+
